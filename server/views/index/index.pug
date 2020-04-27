@@ -1,0 +1,31 @@
+extends ../layout/index
+block slider
+    .slider
+        h1 Rio de Janeiro
+        em Aventura
+block contenido
+    main.container.bt-5
+        h2.text-center.mb-5 Sobre Nosotros
+        .row.mb-5
+            .col-md-6.text-justify
+                p Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates beatae quam doloribus nemo aut reprehenderit tenetur, dolorum nesciunt necessitatibus. Fuga molestias mollitia, deleniti reprehenderit autem inventore dolores!
+
+                p Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet architecto qui quaerat? Amet nobis sunt fugit, quidem iusto itaque doloribus, eum rerum quae reiciendis qui! Exercitationem ea atque sapiente inventore laborum beatae, error amet quo cum illo. Excepturi alias, totam eius tenetur repellat eligendi. Dolore expedita ullam animi quae vitae.
+            .col-md-6
+                img.img-fluid(src="/img/inicio_nosotros.jpg", alt="Sobre nosotros imagen")
+        h2.text-center.mb-5 Proximos viajes
+        include ../layout/partials/viajes
+
+    .descuento
+        .container
+            .row
+                .col-md-6
+                    .contenido
+                        h3 5% de Descuento
+                        p.titulo Viaje a Canada
+                        p.fecha 20 de Agosto 2020 - 30 de Agosto 2020
+                        p.precio $2,500 USD
+
+    .container
+        h2.text-center.my-5 Testimonios
+        include ../layout/partials/testimoniales
